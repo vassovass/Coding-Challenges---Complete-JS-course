@@ -41,6 +41,7 @@ const checkWinner = (avgDolphins, avgKoalas) => {
   } else {
     console.log(`nobody wins (${avgDolphins} vs. ${avgKoalas})`)
   }
+  return checkWinner
 }
 console.log(checkWinner(avgDolphins, avgKoalas))
 
@@ -48,4 +49,4 @@ avgDolphins = calcAverage(85, 54, 41);
 avgKoalas = calcAverage(23, 34, 27);
 console.log(checkWinner(avgDolphins, avgKoalas))
 
-// todo Check this against answer in tut, but read it first and see why undefined is shown
+// todo Check this against answer in tut, but read it first and see why undefined is shown - got rid of undefined - but logging whole if statement - need to fix
